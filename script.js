@@ -1,6 +1,5 @@
 var p1health;
 var enemyhealth;
-
 window.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("atk").addEventListener("click", mainattack);
