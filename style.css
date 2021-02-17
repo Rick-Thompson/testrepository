@@ -1,0 +1,78 @@
+:root {
+    --main-bg-color: #1e90ff;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    font-size: 5em;
+    text-align: center;
+}
+
+nav {
+    width: 15%;
+    margin: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+#p1bar {
+    background-color:green;
+    width:100px;
+    height:1em;
+}
+#enemybar {
+    background-color: green;
+    width: 100px;
+    height: 1em;
+}
+#closebtn,#menu {
+    display: none;
+}
+
+@media (max-width:1000px) and (min-width:601px ) {
+    body{
+        display:block
+    }
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li {
+        list-style-type: none;
+        display: inline;
+
+    }
+    nav{
+        width:auto;
+    }
+}
+@media (max-width:600px){
+    body {
+        display: block
+    }
+    nav {
+        overflow-x: hidden;
+        background-color: darkblue;
+        z-index: 1;
+        color: white;
+        transition: .5s;
+        margin:0px;
+        padding:0px;
+        height:0px;
+        width:auto;
+    }
+
+    #closebtn,#menu {
+        display:block;
+        transition: .5s;
+    }
+
+}
